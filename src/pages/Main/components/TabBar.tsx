@@ -30,7 +30,10 @@ const TabBar = ({ activatedTab, onClick }: TabClickProps) => {
 
 const Container = styled.div`
   display: flex;
+  position: sticky;
+  top: 120px;
   border-bottom: 1px solid #d9d8d4;
+  background-color: white;
   width: 100%;
 `;
 
