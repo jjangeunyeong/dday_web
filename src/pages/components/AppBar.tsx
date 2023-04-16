@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoSrc from "assets/logo-black.png";
 
-const NavBar = () => {
+const AppBar = () => {
   return (
     <Conatiner>
       <Link to="/">
@@ -27,4 +27,4 @@ const Logo = styled.img`
   padding: 30px;
 `;
 
-export default NavBar;
+export default AppBar;

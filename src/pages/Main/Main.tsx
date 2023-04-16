@@ -1,5 +1,5 @@
 import TabBar from "pages/Main/components/TabBar";
-import NavBar from "pages/components/NavBar";
+import AppBar from "pages/components/AppBar";
 import { useState } from "react";
 import styled from "styled-components";
 import PlusImgSrc from "assets/pluBtn2.png";
@@ -30,18 +30,18 @@ const Main = () => {
 
   return (
     <MainContainer>
-      <NavBar />
+      <AppBar />
       <TabBar activatedTab={activatedTab} onClick={handleTabClick} />
       {activatedTab === "디데이" ? (
         <DdayList scheduleList={scheduleList} />
       ) : (
         "더보기탭"
       )}
-      <PlusBtn>
-        <Link to="/select">
+      <Link to="/select">
+        <PlusBtn>
           <PlusImg src={PlusImgSrc} alt="dday_plus_button" />
-        </Link>
-      </PlusBtn>
+        </PlusBtn>
+      </Link>
     </MainContainer>
   );
 };
